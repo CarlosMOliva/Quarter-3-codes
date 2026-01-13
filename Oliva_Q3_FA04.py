@@ -1,24 +1,22 @@
-students = ["Student 1", "Student 2", "Student 3", "Student 4", "Student 5"]
-scores = [
-    [85, 88, 90],
-    [78, 82, 80],
-    [92, 91, 94],
-    [70, 75, 72],
-    [88, 86, 89]
+steppers = ["Jim", "Jack", "John"]
+steps = [
+  [4500, 5200, 4800, 5000, 5300],
+  [4000, 4100, 3900, 4200, 4600],
+  [6000, 5800, 5900, 6100, 6200]
 ]
 
 totals = []
 
-for i in range(len(scores)):
-    total_score = sum(scores[i])
-    totals.append(total_score)
-    print(f"{students[i]} - Scores: {scores[i]} Total Score: {total_score}")
+for i in range(len(steps)):
+    total_steps = sum(steps[i])
+    totals.append(total_steps)
+    print(f"{steppers[i]} - Steps: {steps[i]} Total steps: {total_steps}")
 
-max_score = max(totals)
-max_student = totals.index(max_score)
-print(f"Highest total score: {students[max_student]} ")
+max_steps = max(totals)
+max_stepper = totals.index(max_steps)
+print(f"Highest total steps: {steppers[max_stepper]} ")
 
-min_score = min(totals)
+min_steps = min(totals)
 
-difference = max_score - min_score
-print(f"Difference between highest and lowest total scores: {difference}")
+difference = max_steps - min_steps
+print(f"Difference between highest and lowest total steps: {difference}")
